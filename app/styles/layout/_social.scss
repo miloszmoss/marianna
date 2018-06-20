@@ -1,0 +1,29 @@
+.social {
+  width: 100%;
+  height: 43rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__icons {
+    display: flex;
+    font-size: 8rem;
+    width: 50%;
+    justify-content: space-around;
+    padding-top: 4rem;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #595959;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      transition: all 0.3s;
+      &:hover {
+        background-color: #e6b5b5;
+        color: #fff;
+      }
+    }
+  }
+}
