@@ -1,0 +1,52 @@
+.info {
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &__box {
+    text-align: center;
+  }
+  &__lead {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    padding: 5rem 0;
+    position: relative;
+    color: #595959;
+    &::before {
+      content: '';
+      width: 100px;
+      height: 4px;
+      background-color: #d07c7c;
+      bottom: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+    }
+  }
+  &__desc {
+    width: 90%;
+    font-size: 1.7rem;
+    margin: 0 auto;
+    color: #595959;
+    font-family: 'Raleway', sans-serif;
+    span {
+      font-size: 1.4rem;
+      font-family: 'Raleway', sans-serif;
+      padding-top: 2rem;
+      display: block;
+    }
+  }
+  &__dots {
+    bottom: 10%;
+  }
+}
+
+.swiper-pagination-bullet {
+  margin: 0 0.5rem;
+  &-active {
+    background-color: #d07c7c;
+  }
+}
