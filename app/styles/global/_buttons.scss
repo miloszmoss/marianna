@@ -8,5 +8,8 @@
   font-weight: 300;
   &--submit {
     background-color: #d07c7c;
+    @include media-to($tablet-bp) {
+      width: 15rem;
+    }
   }
 }

@@ -5,12 +5,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include media-to($tablet-bp) {
+    height: 35rem;
+  }
   &__icons {
     display: flex;
     font-size: 8rem;
     width: 50%;
     justify-content: space-around;
     padding-top: 4rem;
+    @include media-to($tablet-bp) {
+      width: 80%;
+    }
+    @include media-to($phone-bp) {
+      font-size: 14rem;
+    }
     a {
       display: flex;
       justify-content: center;
