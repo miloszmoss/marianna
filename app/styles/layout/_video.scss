@@ -2,10 +2,20 @@
   width: 100%;
   height: 70rem;
   display: flex;
+  padding: 2rem;
   justify-content: center;
+  @include media-to($wide-bp) {
+    height: 40rem;
+  }
   &__link {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     height: 100%;
+    @include media-to($tablet-bp) {
+      width: 90%;
+    }
+    @include media-to($phone-bp) {
+      width: 98%;
+    }
   }
 }
